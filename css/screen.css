@@ -32,6 +32,13 @@
   color: rgb(37, 17, 43);
   padding:  10px 30px;
 }
+.dropbtn2 {
+  display:inline-block;
+  font-size: 1.5em;
+  text-decoration: none;
+  color: rgb(37, 17, 43);
+  padding:  10px 30px;
+}
 .dropdown {
   position: relative;
   display: inline-block;
@@ -84,7 +91,7 @@
 }
 .showcase .showcase-content h1{
   color: darkblue;
-  font-size: 60px;
+  font-size: 3em;
   margin: 15px 0;
 }
 .showcase .showcase-content span{
