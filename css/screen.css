@@ -135,8 +135,14 @@
 .dropdown-content a:hover {background-color: #417cf2;}
 
 /* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {display: block;}
 
+
+@media only screen and (min-width: 800px) {
+.dropdown:hover .dropdown-content {display: block;}
+}
+@media only screen and (max-width: 800px){
+.show {display: block;}
+}
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {background-color: #1a3469;}
 
