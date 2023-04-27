@@ -7,69 +7,91 @@
     <title>Page Title</title>
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" href="css/screen.css" >
+    <script src="js/script.js" async></script>
   </head>
   <body>
   <!--top navigation bar-->
     <div class="showcase">
       <div class="navbar-top">
         <ul class="left">
-          <li><a href="index.html">TISFUD</a></li>
+          <li><a href="index.html" class="dropbtn">TISFUD</a></li>
           <div class="dropdown">
-            <li class="dropbtn">About Us
-              <div class="dropdown-content">
+            <li onclick="myFunction()" class="dropbtn">About Us</li>
+            <div id="myDropdown" class="dropdown-content">
                 <a href="index.html">History</a>
                 <a href="constitution.html">Constitution</a>
                 <a href="isud_journal.html">ISUD Journal</a>
-              </div>
-            </li>
-          </div>
-          <div class="dropdown">
-            <li class="dropbtn">ISUD Announcements and Events
-              <div class="dropdown-content">
-                <a href="index.html">2018 Congress</a>
-                <a href="index.html">2016 Congress</a>
-                <a href="index.html">Past Events</a>
-                <a href="index.html">Videos</a>
-              </div>
-            </li>
-          </div>
-          <li><a href="contact.html">Contact</a></li>
-          <li><a href="login.html"><i class="placeholder-subscribe"></i>Log In</a></li>
-        </ul>
-      </div>
-      <div class="showcase-content">
-        <h1>The International Society for Universal Dialogue<span> placeholder</span></h1>
-        <p>we are creating a better website for this random place that we just found out</p>
-        <a href="constitution.html" class="btn btn-left"> EXPLORE CONSTITUTION</a>
-        <a href="form.html" class="btn btn-right"> EXPLORE HTML FORM</a>
-      </div>
-      <div class="showcase">
-        <section id="information" class="bg-light py-3">
-          <div class="wrapper">
-            <div class="contact">
-              <div id="form">
-                <div class="fish" id="fish"></div>
-                <div class="fish" id="fish2"></div>
-                <form id="waterform" method="get" autocomplete="on" action="#null">
-                  <div class="formgroup" id="email-form">
-                    <h2>Log in</h2>
-                    <label for="name">Your e-mail</label>
-                    <input type="email" id="email" name="email" required>
-                  </div>
-                  <div class="formgroup" id="name-form">
-                    <label for="email">Your username</label>
-                    <input type="text" id="name" name="name" required>
-                  </div>
-                  <div class="formgroup" id="message-form">
-                    <label for="message">Your password</label>
-                    <textarea id="message" name="message" required></textarea>
-                  </div>
-                  <button type="submit" onclick="validateform()">Get yourself logged in</button>
-                </form>
-              </div>
             </div>
           </div>
-        </section>
+          <div class="dropdown">
+            <li onclick="myFunction2()" class="dropbtn">ISUD Announcements and Events</li>
+            <div id="myDropdown2" class="dropdown-content">
+              <a href="index.html">2018 Congress</a>
+              <a href="index.html">2016 Congress</a>
+              <a href="index.html">Past Events</a>
+              <a href="index.html">Videos</a>
+            </div>
+          </div>
+          <li><a href="contact.html" class="dropbtn">Contact</a></li>
+          <li><a href="login.html" class="dropbtn">Log In</a></li>
+        </ul>
+        <div id="mobile_menu" class="dropdown">
+            <li onclick="myFunction3()" class="dropbtn" id="mobilebtn">&#9776;</li>
+            <div id="myDropdown3" class="dropdown-content">
+              <a href="index.html" >TISFUD</a>
+			  <div class="dropdown">
+                <li onclick="myFunction4()">About Us</li>
+                <div id="myDropdown4" class="dropdown-content">
+                  <a href="index.html">History</a>
+                  <a href="constitution.html">Constitution</a>
+                  <a href="isud_journal.html">ISUD Journal</a>
+                </div>
+              </div>
+			  <div class="dropdown">
+                <li onclick="myFunction5()">ISUD Announcements and Events</li>
+                <div id="myDropdown5" class="dropdown-content">
+                  <a href="index.html">2018 Congress</a>
+                  <a href="index.html">2016 Congress</a>
+                  <a href="index.html">Past Events</a>
+                  <a href="index.html">Videos</a>
+                </div>
+              </div>
+              <a href="contact.html">Contact</a>
+              <a href="login.html">Log In</a>
+            </div>
+        </div>
+      </div>
+      <!--showcase work-->
+      <div class="showcase-content">
+        <h1>The International Society for Universal Dialogue</h1>
+        <p>we are creating a better website for this random place that we just found out</p>
+        <a href="constitution.html" class="btn btn-left"> EXPLORE CONSTITUTION</a>
+        <a href="isud_journal.html" class="btn btn-right"> EXPLORE ISUD Journal</a>
+      </div>
+      <div class="showcase">
+        <div class="contact">
+          <div id="form">
+            <div class="fish" id="fish"></div>
+            <div class="fish" id="fish2"></div>
+            <form id="waterform" method="get" autocomplete="on" action="#null">
+              <div class="formgroup" id="email-form">
+                <h2>Log in</h2>
+				<p>This is a login for members, if you would like to join just contact us</p>
+                <label for="name">Your e-mail</label>
+                <input type="email" id="email" name="email" required>
+              </div>
+              <div class="formgroup" id="name-form">
+                <label for="email">Your username</label>
+                <input type="text" id="name" name="name" required>
+              </div>
+              <div class="formgroup" id="message-form">
+                <label for="message">Your password</label>
+                <textarea id="message" name="message" required></textarea>
+              </div>
+              <button type="submit" onclick="validateform()">Get yourself logged in</button>
+            </form>
+          </div>
+        </div>
       </div>
     </div>
   </body>
