@@ -385,9 +385,9 @@ label{
   justify-content: center;
 }
 img{
-	display:block;
-	margin:auto;
-	margin-bottom:1em;
-	margin-top:1em;
-	width:50%;
+  display:block;
+  margin:auto;
+  margin-bottom:1em;
+  margin-top:1em;
+  width:50%;
 }
